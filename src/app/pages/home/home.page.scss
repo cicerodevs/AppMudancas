@@ -1,0 +1,52 @@
+.dark{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    background:var( --ion-color-primary);
+}
+.topo{
+    height: 80%;
+}
+ion-toolbar{
+    --ion-toolbar-background-color: transparent;
+    --ion-toolbar-text-color: white;
+}
+.card{
+    ion-card{
+        background-color: #fff;
+    }
+}
+.botton{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%!important;
+}
+button{
+    height: 50px;
+    background-color:  #00a6ff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5% 20%;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+ion-searchbar{
+    --background: #fff;
+}
+ion-list{
+    --background: #fff!important;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+}
+ion-item{
+    --background: #fff!important;
+     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+     margin-left: 8px;
+     margin-right: 8px;
+    
+}

@@ -1,0 +1,7 @@
+{
+  "name": "mudanca",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

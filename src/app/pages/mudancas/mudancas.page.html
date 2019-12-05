@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Histórico de Mudanças</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list *ngIf="!prestadores.length">
+    <ion-item *ngFor="let item of [0, 1, 2]">
+      <ion-avatar slot="start">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <h3>
+          <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+        </h3>
+        <p>
+          <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-card>
+    <ion-card-content>
+      <ion-label>Agendamento: {{agendamento}}</ion-label><br><br>
+      <ion-label>Motorista: {{ nome }}</ion-label><br><br>
+      <ion-label>Veículo: {{modelo}} / Placa: {{placa}} | {{porte}} porte</ion-label><br><br>
+      <ion-label>Status: Agendado <small style="position: absolute; float: right; right: 10px; bottom: 15px; font-size: 18px; font-weight: bold;">R$148,00</small></ion-label><br>
+
+    </ion-card-content>
+  </ion-card>

@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="busca"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Detalhes do prestador</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content>
+        <ion-card>
+          <ion-item >
+            <ion-avatar slot="start">
+              <img [src]="prestadores.picture">
+            </ion-avatar>
+    
+            <ion-label>{{ nome }}</ion-label>
+            <ion-note color="primary" slot="end"  style="color: #00a6ff; font-size: 15px;;">{{ prestadores.preco_km*15 | currency: 'BRL'}}</ion-note>
+          </ion-item>
+        
+          <ion-card-content>
+           <p style="font-size: 16px;"> {{ prestadores.modelo_veiculo }}  /  {{ prestadores.placa }}  |  {{ prestadores.porte }} porte</p>
+           <p style="float: right; position: absolute; bottom: 5px; right: 5px;"> {{ prestadores.createdAt | date: "dd/MM/yyyy" }}</p>
+
+           <ion-button (click)="saveMudanca()">Contratar</ion-button>
+           
+          </ion-card-content>
+        </ion-card>
+</ion-content>
